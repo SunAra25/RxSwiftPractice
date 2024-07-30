@@ -16,6 +16,7 @@
 		C0B64AB02C58CDA10079419C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C0B64AAF2C58CDA10079419C /* RxCocoa */; };
 		C0B64AB22C58CDA10079419C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C0B64AB12C58CDA10079419C /* RxSwift */; };
 		C0B64AB52C58CDAF0079419C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C0B64AB42C58CDAF0079419C /* SnapKit */; };
+		C0B64AB72C58D8740079419C /* SimpleSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B64AB62C58D8740079419C /* SimpleSignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C0B64AA32C58C9F50079419C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0B64AA62C58C9F50079419C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0B64AA82C58C9F50079419C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B64AB62C58D8740079419C /* SimpleSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				C0B64A9A2C58C9F30079419C /* AppDelegate.swift */,
 				C0B64A9C2C58C9F30079419C /* SceneDelegate.swift */,
 				C0B64A9E2C58C9F30079419C /* ViewController.swift */,
+				C0B64AB62C58D8740079419C /* SimpleSignUpViewController.swift */,
 				C0B64AA02C58C9F30079419C /* Main.storyboard */,
 				C0B64AA32C58C9F50079419C /* Assets.xcassets */,
 				C0B64AA52C58C9F50079419C /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B64AB72C58D8740079419C /* SimpleSignUpViewController.swift in Sources */,
 				C0B64A9F2C58C9F30079419C /* ViewController.swift in Sources */,
 				C0B64A9B2C58C9F30079419C /* AppDelegate.swift in Sources */,
 				C0B64A9D2C58C9F30079419C /* SceneDelegate.swift in Sources */,
