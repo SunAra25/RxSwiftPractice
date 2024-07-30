@@ -108,7 +108,7 @@ class ViewController: UIViewController {
     
     func setSwitch() {
         // just: 1개의 요소만 방출 가능 (배열은 ok)
-        // of: 여러개의 요소 방출 가능 (배열 x)
+        // of: 여러개의 요소 방출 가능
         
         Observable.of(false, false, true)
             //.bind(to: simpleSwitch.rx.isOn)
