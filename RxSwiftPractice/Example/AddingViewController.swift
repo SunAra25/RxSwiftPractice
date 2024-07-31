@@ -18,11 +18,19 @@ class AddingViewController: UIViewController {
     let divisionView = UIView()
     let resultLabel = UILabel()
     
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
         setConstraints()
+        
+        Observable.combineLatest(number1textField.rx.text.orEmpty, number2textField.rx.text.orEmpty, number3textField.rx.text.orEmpty) { textValue1, textValue2, textValue3 -> Int in
+            return (Int(textValue1) ?? 0) + (Int(textValue2) ?? 0) + (Int(textValue3) ?? 0)
+        }
+        .map { String($0) }
+        .bind(to: resultLabel.rx.text)
+        .disposed(by: disposeBag)
     }
     
     func configureView() {
