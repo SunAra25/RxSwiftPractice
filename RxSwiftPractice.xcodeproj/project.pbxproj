@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C08B37F52C58DEDC00D67A64 /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B37F42C58DEDC00D67A64 /* ObservableViewController.swift */; };
+		C08B37FB2C5A4BBB00D67A64 /* AddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B37FA2C5A4BBB00D67A64 /* AddingViewController.swift */; };
 		C0B64A9B2C58C9F30079419C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B64A9A2C58C9F30079419C /* AppDelegate.swift */; };
 		C0B64A9D2C58C9F30079419C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B64A9C2C58C9F30079419C /* SceneDelegate.swift */; };
 		C0B64A9F2C58C9F30079419C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B64A9E2C58C9F30079419C /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		C08B37F42C58DEDC00D67A64 /* ObservableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
+		C08B37FA2C5A4BBB00D67A64 /* AddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingViewController.swift; sourceTree = "<group>"; };
 		C0B64A972C58C9F30079419C /* RxSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B64A9A2C58C9F30079419C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0B64A9C2C58C9F30079419C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C08B37F92C5A4BA300D67A64 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C08B37FA2C5A4BBB00D67A64 /* AddingViewController.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		C0B64A8E2C58C9F30079419C = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 				C0B64AA32C58C9F50079419C /* Assets.xcassets */,
 				C0B64AA52C58C9F50079419C /* LaunchScreen.storyboard */,
 				C0B64AA82C58C9F50079419C /* Info.plist */,
+				C08B37F92C5A4BA300D67A64 /* Example */,
 			);
 			path = RxSwiftPractice;
 			sourceTree = "<group>";
@@ -164,6 +175,7 @@
 				C0B64A9B2C58C9F30079419C /* AppDelegate.swift in Sources */,
 				C08B37F52C58DEDC00D67A64 /* ObservableViewController.swift in Sources */,
 				C0B64A9D2C58C9F30079419C /* SceneDelegate.swift in Sources */,
+				C08B37FB2C5A4BBB00D67A64 /* AddingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
