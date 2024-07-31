@@ -21,10 +21,55 @@ class VaildationViewController: UIViewController {
     let passwordMessageLabel = UILabel()
     let somthingButton = UIButton()
     
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
         setConstraints()
+        
+        let usernameValid = nameTextField.rx.text.orEmpty
+            .map { $0.count >= 5 } // Bool
+        // 한 번 생성한 시퀀스를 공유
+        // 새로 subscribe를 하더라도 버퍼에 저장된 시퀀스를 공유하게 됨
+        // replay는 버퍼 개수
+            .share(replay: 1)
+
+        let passwordValid = passwordTextField.rx.text.orEmpty
+            .map { $0.count >= 5 }
+            .share(replay: 1)
+
+        let everythingValid = Observable.combineLatest(usernameValid, passwordValid) { $0 && $1 } // Bool
+            .share(replay: 1)
+
+//        usernameValid
+//            .bind(to: passwordTextField.rx.isEnabled)
+//            .disposed(by: disposeBag)
+//
+//        usernameValid
+//            .bind(to: nameMessageLabel.rx.isHidden)
+//            .disposed(by: disposeBag)
+
+        // 위 코드와 같은 역할
+        usernameValid
+            .bind(with: self) { owner, isValid in
+                owner.passwordTextField.isEnabled = isValid
+                owner.nameMessageLabel.isHidden = isValid
+            }.disposed(by: disposeBag)
+        
+        passwordValid
+            .bind(to: passwordMessageLabel.rx.isHidden)
+            .disposed(by: disposeBag)
+
+        everythingValid
+            .bind(to: somthingButton.rx.isEnabled)
+            .disposed(by: disposeBag)
+
+        somthingButton.rx.tap
+            .subscribe(onNext: { _ in
+                print("Somthing Button Clicked")
+            })
+            .disposed(by: disposeBag)
     }
     
     func configureView() {
