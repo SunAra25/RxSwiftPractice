@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C08B37F52C58DEDC00D67A64 /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B37F42C58DEDC00D67A64 /* ObservableViewController.swift */; };
 		C08B37FB2C5A4BBB00D67A64 /* AddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B37FA2C5A4BBB00D67A64 /* AddingViewController.swift */; };
+		C08B37FD2C5A56DF00D67A64 /* VaildationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B37FC2C5A56DF00D67A64 /* VaildationViewController.swift */; };
 		C0B64A9B2C58C9F30079419C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B64A9A2C58C9F30079419C /* AppDelegate.swift */; };
 		C0B64A9D2C58C9F30079419C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B64A9C2C58C9F30079419C /* SceneDelegate.swift */; };
 		C0B64A9F2C58C9F30079419C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B64A9E2C58C9F30079419C /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		C08B37F42C58DEDC00D67A64 /* ObservableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
 		C08B37FA2C5A4BBB00D67A64 /* AddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingViewController.swift; sourceTree = "<group>"; };
+		C08B37FC2C5A56DF00D67A64 /* VaildationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaildationViewController.swift; sourceTree = "<group>"; };
 		C0B64A972C58C9F30079419C /* RxSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B64A9A2C58C9F30079419C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0B64A9C2C58C9F30079419C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				C08B37FA2C5A4BBB00D67A64 /* AddingViewController.swift */,
+				C08B37FC2C5A56DF00D67A64 /* VaildationViewController.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0B64AB72C58D8740079419C /* SimpleSignUpViewController.swift in Sources */,
+				C08B37FD2C5A56DF00D67A64 /* VaildationViewController.swift in Sources */,
 				C0B64A9F2C58C9F30079419C /* ViewController.swift in Sources */,
 				C0B64A9B2C58C9F30079419C /* AppDelegate.swift in Sources */,
 				C08B37F52C58DEDC00D67A64 /* ObservableViewController.swift in Sources */,
